@@ -1,0 +1,210 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-image: url(./img/background.jpg);
+}
+
+.burgerPage{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calc{
+  margin: 0px;
+  margin-top: 25px;
+  margin-right: 25%;
+  padding: 5px;
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  display: flex;
+} 
+
+.calc label{
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  background-color: #F0F0F0;
+  border: 4px solid #FFCCC7;
+  border-radius: 6px;
+  width: 100px;
+  height: 25px;
+} 
+
+.calc label .calcInput{
+  border: none;
+  outline: none;
+}
+
+.calc label Input, .calc label p{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  color:#60A802;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: fantasy;
+  background-color: #F0F0F0; 
+} 
+
+.burger{
+    margin: 0px;
+    padding: 100px 0px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tomatoes, .meat, .marol, .topBread, .chees, .onions{
+  display: flex;
+  justify-content: center;
+  position: absolute;  
+  margin: 0px;
+}
+
+.chees{
+  width: 20%;
+  height: 13%;
+  cursor: pointer; 
+}
+
+.tomatoes, .onions{
+  width: 18%;
+  height: 13%; 
+  cursor: pointer; 
+}
+
+.bread, .topBread, .meat, .marol{
+  width: 22%;
+  height: 15%;
+  cursor: pointer; 
+}
+
+/* /////////////////////////////////////////////////////////  Responsive design  */
+@media (max-width: 1199px){
+
+  .burger{
+    height: 450px; 
+  }  
+    
+  .meat, .marol, .topBread, .bread, .chees{
+    width: 22%;
+    height: 14%;
+  }
+
+  .tomatoes, .onions{
+    width: 18%;
+    height: 12%;
+  }
+
+  .bread{
+    width: 22%;
+    height: 18%;
+  }
+
+}
+
+
+
+@media (max-width: 991px){
+
+  .burger{
+    height: 400px; 
+  }  
+      
+  .meat, .marol, .topBread, .bread, .chees{
+    width: 24%;
+    height: 14%;
+  }
+  
+  .tomatoes, .onions{
+    width: 20%;
+    height: 12%;
+  }
+
+  .bread{
+    width: 24%;
+    height: 16%;
+  }
+
+}
+
+
+
+@media (max-width: 767px){
+
+  .burger{
+    height: 300px; 
+  }  
+      
+  .meat, .marol, .topBread, .bread, .chees{
+    width: 24%;
+    height: 14%;
+  }
+  
+  .tomatoes, .onions{
+    width: 20%;
+    height: 12%;
+  }
+  .bread{
+    width: 24%;
+    height: 16%;
+  }
+
+}
+
+
+
+@media (max-width: 576px){
+  .burger{
+    height: 200px; 
+  }  
+      
+  .meat, .marol, .topBread, .bread, .chees{
+    width: 24%;
+    height: 14%;
+  }
+  
+  .tomatoes, .onions{
+    width: 20%;
+    height: 12%;
+  }
+  .bread{
+    width: 24%;
+    height: 16%;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
