@@ -8,23 +8,23 @@ function App() {
   
   const [price, setPrice] = useState(500); 
 
-  const [mtTopBread, setMtTopBread] = useState(-16); 
+  const [mtTopBread, setMtTopBread] = useState(-25); 
 
-  const [mtMeat, setMtMeat] = useState(-15);
+  const [mtMeat, setMtMeat] = useState(-45);
   const [mlMeat, setMlMeat] = useState(-30);
 
-  const [mlMarol, setMlMarol] = useState(-35);  
-  const [mtMarol, setMtMarol] = useState(0); 
+  const [mlMarol, setMlMarol] = useState(-55);  
+  const [mtMarol, setMtMarol] = useState(-5); 
 
-  const [mtTomatoes, setMtTomatoes] = useState(-15);
-  const [mlTomatoes, setMlTomatoes] = useState(30);
+  const [mtTomatoes, setMtTomatoes] = useState(-35);
+  const [mlTomatoes, setMlTomatoes] = useState(40);
 
   const [mtChees, setMtChees] = useState(6);
-  const [mlChees, setMlChees] = useState(25);
+  const [mlChees, setMlChees] = useState(55);
   
  
-  const [mlOnions, setMlOnions] = useState(-15); 
-  const [mtOnions, setMtOnions] = useState(10);
+  const [mlOnions, setMlOnions] = useState(-20); 
+  const [mtOnions, setMtOnions] = useState(20);
 
  
   const [countMeat, setCountMeat] = useState(1);
@@ -39,14 +39,14 @@ function App() {
     plusPrice = 700;
     setPrice(price + plusPrice);
     setMlMeat(mlMeat + 30);
-    setMtMeat(mtMeat + 12);
+    setMtMeat(mtMeat + 40);
     
     setCountMeat((countMeat) => countMeat + 1);
         
     if((countMeat % 2) === 0){   
       setPrice(price - plusPrice);
       setMlMeat(mlMeat-30);
-      setMtMeat(mtMeat-12);
+      setMtMeat(mtMeat-40);
     }
   }
 
@@ -55,26 +55,26 @@ function App() {
   const plusTomatoes = () => {
     plusPrice = 200;
     setPrice(price + plusPrice)
-    setMtTomatoes(mtTomatoes + 7)
-    setMlTomatoes(mlTomatoes - 29);
+    setMtTomatoes(mtTomatoes + 23)
+    setMlTomatoes(mlTomatoes - 40);
 
     setCountTomatoes((countTomatoes) => countTomatoes + 1);
         
     if((countTomatoes % 2) === 0){   
       setPrice(price - plusPrice);
-      setMlTomatoes( + 30);
-      setMtTomatoes(-15);
+      setMlTomatoes( + 40);
+      setMtTomatoes(- 35);
     }
   }
 
 
 ////////////////////////////////////// lower bread 
   const pressTopBread = () => { 
-    setMtTopBread(- 10);
+    setMtTopBread(-18);
     setCountTopBread((countTopBread) => countTopBread + 1);
         
     if((countTopBread % 2) === 0){   
-      setMtTopBread(mtTopBread - 10);
+      setMtTopBread(mtTopBread -7);
     }
   } 
 
@@ -84,14 +84,14 @@ function App() {
     plusPrice = 300;
     setPrice(price + plusPrice)
     setMtMarol(mtMarol - 5) 
-    setMlMarol(mlMarol + 35)
+    setMlMarol(mlMarol + 55)
     
     setCountMarol((countMarol) => countMarol + 1);
         
     if((countMarol % 2) === 0){   
       setPrice(price - plusPrice);
-      setMtMarol(0);
-      setMlMarol(- 35);
+      setMtMarol(-5);
+      setMlMarol(- 55);
       
     }
   }
@@ -101,7 +101,7 @@ function App() {
   const plusChees = () => {
     plusPrice = 200;
     setPrice(price + plusPrice)
-    setMtChees( - 8)
+    setMtChees( - 12)
     setMlChees(mtChees - 6)
 
     
@@ -109,7 +109,7 @@ function App() {
         
     if((countChees % 2) === 0){   
       setPrice(price - plusPrice);
-      setMlChees( + 25);
+      setMlChees( + 55);
       setMtChees(+ 6);
     }
   }
@@ -119,15 +119,15 @@ function App() {
   const plusOnions = () => {
     plusPrice = 100;
     setPrice(price + plusPrice)
-    setMlOnions(mlOnions + 15)
-    setMtOnions(mtOnions - 17)
+    setMlOnions(mlOnions + 20)
+    setMtOnions(mtOnions - 31)
 
     setCountOnions((countOnions) => countOnions + 1);
         
     if((countOnions % 2) === 0){   
       setPrice(price - plusPrice);
-      setMlOnions(-15);
-      setMtOnions(+10);
+      setMlOnions(- 20);
+      setMtOnions(+ 20);
     }
   }
 
